@@ -18,10 +18,10 @@ superagent.get(URL).end((err, res) => {
   //print(err);
   //print(res);
   //print(res.text);
-  const text = x('select html | read property textContent', res.text)
+  const text = x(`select html | remove img {0,} | read property textContent`, res.text)
     .replace(/\n/g,'')
     .replace(/\s+/g, ' ').trim();
-  //print(text);
+  print(text);
   toxicity.load(THRESHOLD).then(model => {
     const sentences = [res.text];
     model.classify(sentences).then(predictions => {
