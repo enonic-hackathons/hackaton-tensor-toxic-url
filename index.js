@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const superagent = require('superagent');
 const tf = require('@tensorflow/tfjs-node-gpu');
 const toxicity = require('@tensorflow-models/toxicity');
