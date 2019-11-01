@@ -1,0 +1,12 @@
+= hackaton tenson toxic url
+
+.Usage
+----
+./index.js <URL>
+----
+
+
+.Example
+----
+./index.js https://tintin.fandom.com/wiki/List_of_Captain_Haddock%27s_Curses
+----
